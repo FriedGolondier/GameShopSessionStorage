@@ -2,9 +2,8 @@
 /* ESTILOS GENERALES */
 /* ==================== */
 body {
-    background: #672fac;
-    ;
-    color: #f8f5ff;
+    background: linear-gradient(160deg, #1f1c2c, #2c3e50);
+    color: #e7e7f5;
     min-height: 100vh;
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -16,9 +15,9 @@ body {
 /* NAVBAR */
 /* ==================== */
 nav {
-    background: #000000;
+    background: linear-gradient(to right, #000000, #111);
     padding: 1rem 0;
-    border-bottom: 2px solid #7617b5;
+    border-bottom: 2px solid #4361ee;
 }
 
 nav .container {
@@ -31,18 +30,17 @@ nav .container {
 }
 
 nav a {
-    color: #e2d6ff;
-    font-weight: 500;
+    color: #e7e7f5;
+    font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     transition: all 0.3s ease;
     text-decoration: none;
-    font-weight: bold;
 }
 
 nav a:hover {
-    color: #fff;
-    background: rgba(245, 245, 255, 0.1);
+    color: #8fd3f4;
+    background: rgba(255, 255, 255, 0.05);
 }
 
 /* ==================== */
@@ -58,21 +56,21 @@ main {
 /* FORMULARIO */
 /* ==================== */
 section:first-of-type {
-    background: #2a1055;
+    background: #1e2a45;
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 3rem;
-    border: 1px solid #4a1d96;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid #4361ee;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 section h2 {
-    color: #f8f5ff;
+    color: #ffffff;
     margin-bottom: 1.5rem;
     font-weight: 600;
     text-align: center;
     font-size: 1.8rem;
-    border-bottom: 2px solid #7b17b5;
+    border-bottom: 2px solid #4895ef;
     padding-bottom: 0.5rem;
     display: inline-block;
 }
@@ -83,12 +81,12 @@ form {
     gap: 1rem;
 }
 
-form>div {
+form > div {
     margin-bottom: 1rem;
 }
 
 label {
-    color: #d8c8ff;
+    color: #a8c0ff;
     font-weight: 500;
     margin-bottom: 0.5rem;
     display: block;
@@ -97,9 +95,9 @@ label {
 input,
 select,
 textarea {
-    background: #2a1055;
-    border: 1px solid #5a2ca0;
-    color: #fff;
+    background: #162237;
+    border: 1px solid #4a74f7;
+    color: #f5f8ff;
     padding: 0.6rem 1rem;
     border-radius: 4px;
     transition: border-color 0.3s ease;
@@ -114,13 +112,13 @@ input[type="range"] {
 input:focus,
 select:focus,
 textarea:focus {
-    border-color: #b5179e;
-    box-shadow: 0 0 0 0.2rem rgba(181, 23, 158, 0.25);
+    border-color: #4895ef;
+    box-shadow: 0 0 0 0.2rem rgba(72, 149, 239, 0.25);
     outline: none;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    background: #b5179e;
+    background: #4895ef;
     width: 18px;
     height: 18px;
 }
@@ -128,20 +126,18 @@ input[type="range"]::-webkit-slider-thumb {
 output {
     display: inline-block;
     margin-left: 10px;
-    color: #d8a1ff;
+    color: #c0ccf7;
     font-weight: bold;
     font-size: 0.9rem;
 }
 
-/* Radio buttons */
 input[type="radio"] {
     width: auto;
     margin-right: 0.5rem;
 }
 
-/* Botón de submit */
 button[type="submit"] {
-    background: #1776b5;
+    background: #4895ef;
     color: #fff;
     font-weight: 600;
     border: none;
@@ -157,7 +153,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background: #12209c;
+    background: #4361ee;
     transform: translateY(-2px);
 }
 
@@ -165,15 +161,15 @@ button[type="submit"]:hover {
 /* LISTA DE PRODUCTOS */
 /* ==================== */
 section:last-of-type {
-    background: #2a1055;
+    background: #1e2a45;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border: 1px solid #4a1d96;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border: 1px solid #4361ee;
 }
 
 section:last-of-type h2 {
-    border-bottom-color: #b5179e;
+    border-bottom-color: #4895ef;
 }
 
 /* Tabla */
@@ -202,25 +198,25 @@ th {
 
 td {
     padding: 1rem;
-    border-bottom: 1px solid #3a1d6e;
-    color: #e2d6ff;
-    background: #2a1055;
+    border-bottom: 1px solid #4361ee;
+    color: #d5d5ef;
+    background: #162237;
 }
 
 tr:nth-child(even) td {
-    background: #2e125e;
+    background: #1e2a45;
 }
 
 tr:hover td {
-    background: #3a1d6e;
-    color: #fff;
+    background: #283a5f;
+    color: #ffffff;
 }
 
 /* Botones de acción */
 .action-btn {
     background: none;
     border: none;
-    color: #d8a1ff;
+    color: #8fd3f4;
     cursor: pointer;
     margin: 0 5px;
     font-size: 1.1rem;
@@ -229,7 +225,275 @@ tr:hover td {
 }
 
 .action-btn:hover {
-    color: #fff;
-    background: rgba(181, 23, 158, 0.2);
+    color: #ffffff;
+    background: rgba(72, 149, 239, 0.2);
     border-radius: 4px;
+}
+
+
+/* productosStyle.css */
+#mensajeExito {
+    transition: all 0.3s ease;
+}
+
+#txtBuscar {
+    max-width: 300px;
+    display: inline-block;
+}
+
+.mensaje-alerta {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    max-width: 90%;
+    animation: fadeSlide 0.4s ease;
+}
+
+.mensaje-exito {
+    background-color: #198754;
+}
+
+.mensaje-error {
+    background-color: #dc3545;
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+.toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.toast {
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    animation: fadeInOut 4s ease forwards;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: #fff;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.toast.success {
+    background: linear-gradient(135deg, #38b000, #70e000);
+}
+
+.toast.error {
+    background: linear-gradient(135deg, #d00000, #ff6b6b);
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(100%); }
+    10% { opacity: 1; transform: translateX(0); }
+    90% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 0; transform: translateX(100%); }
+}
+
+/* =================== */
+/* ALERTAS PERSONALIZADAS */
+/* =================== */
+#mensajeExito {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    min-width: 300px;
+    max-width: 90%;
+    padding: 18px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000; /* Texto por defecto en negro */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    animation: slideDownFade 0.5s forwards;
+    background-color: #e4ebf1;
+}
+
+/* Mensaje de éxito */
+#mensajeExito.text-success {
+    background-color: #d4edda; /* Fondo verde claro */
+    border-left: 6px solid #28a745; /* Borde verde fuerte */
+    color: #155724; /* Texto verde oscuro para contraste */
+}
+
+/* Mensaje de error */
+#mensajeExito.text-danger {
+    background-color: #f8d7da;  /* Fondo más claro para error */
+    border-left: 6px solid #dc3545; /* Borde rojo más claro */
+    color: #721c24;  /* Texto oscuro para mayor contraste */
+}
+
+/* Animación */
+@keyframes slideDownFade {
+    from {
+        top: 0;
+        opacity: 0;
+    }
+    to {
+        top: 20px;
+        opacity: 1;
+    }
+}
+
+/* =================== */
+/* ALERTAS PERSONALIZADAS */
+/* =================== */
+.alerta {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    min-width: 300px;
+    max-width: 90%;
+    padding: 18px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000; /* Texto por defecto en negro */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+/* Mensaje de éxito */
+.text-success {
+    background-color: #d4edda; /* Fondo verde claro */
+    border-left: 6px solid #28a745; /* Borde verde fuerte */
+    color: #155724; /* Texto verde oscuro para contraste */
+}
+
+/* Mensaje de error */
+.text-danger {
+    background-color: #f8d7da;  /* Fondo más claro para error */
+    border-left: 6px solid #dc3545; /* Borde rojo más claro */
+    color: #721c24;  /* Texto oscuro para mayor contraste */
+}
+/* =================== */
+/* Estilo para el mensaje de advertencia */
+#mensajeAdvertencia {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    min-width: 300px;
+    max-width: 90%;
+    padding: 18px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #b8daff; /* Fondo amarillo para advertencia */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensajeAdvertencia p {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+#mensajeAdvertencia button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnConfirmar {
+    background-color: #ff7700;
+    border: none;
+    color: white;
+}
+
+#btnCancelar {
+    background-color: #888;
+    border: none;
+    color: white;
+}
+/* =================== */
+/* Estilo para mensaje de error (cuando no hay productos) */
+.mensaje-error {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    min-width: 300px;
+    max-width: 90%;
+    padding: 18px 24px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e63946; /* Rojo */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mensaje-error p {
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+.alerta-confirmacion {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-width: 90%;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff;
+    color: #004085;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    z-index: 1050;
+    transition: opacity 0.3s ease;
+}
+.alerta-confirmacion button {
+    padding: 4px 10px;
+    font-size: 0.875rem;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #004085;
+    color: white;
+    cursor: pointer;
+}
+.alerta-confirmacion button:hover {
+    background-color: #00376b;
 }

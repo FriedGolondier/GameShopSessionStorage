@@ -1,260 +1,171 @@
-/* ============================= */
-/* RESET GENERAL                 */
-/* ============================= */
-
-/* Elimina márgenes y rellenos predeterminados y ajusta el modelo de caja */
-* {
+/* === ESTILOS GENERALES === */
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121b25;
+    color: #fff;
 }
 
-/* ============================= */
-/* ESTILOS GENERALES              */
-/* ============================= */
-
-/* Configuración global del cuerpo */
-body {
-    font-family: Arial, sans-serif;
-    background: #672fac;
-    ;
-    color: white;
-}
-
-/* ============================= */
-/* HEADER Y BANNER                */
-/* ============================= */
-
-/* Estilos del encabezado */
+/* === HEADER Y NAVBAR === */
 header {
-    background-color: #000000;
+    background-color: #0a0f1a;
 }
 
-/* Imagen del banner */
-header img {
-    width: 100%;
-    height: auto;
-}
-
-/* ============================= */
-/* NAVBAR                         */
-/* ============================= */
-
-/* Contenedor del navbar */
 .navbar {
-    background: linear-gradient(to right, #000000, #111);
-    padding: 10px 0;
+    background-color: #1a2738 !important;
 }
 
-/* Enlaces dentro del navbar */
 .navbar .nav-link {
-    color: white;
-    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+    color: #87ceeb !important;
+}
+
+/* ============================= */
+/* COLORES Y FONDOS GENERALES   */
+/* ============================= */
+body {
+    background-color: #0e1a26;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: #00bfff;
     text-decoration: none;
 }
 
-/* Efecto hover en enlaces del navbar */
-.navbar .nav-link:hover {
-    text-decoration: underline;
+a:hover {
+    color: #009acd;
 }
 
 /* ============================= */
-/* ALINEACIÓN LOGIN Y REGISTRO    */
+/* CARRUSEL DE VIDEO             */
 /* ============================= */
-
-/* Alineación de los elementos del navbar (Login y Registrarse) */
-.navbar-collapse {
-    justify-content: end;
-}
-
-/* Espaciado entre los enlaces */
-.navbar-collapse .nav-link {
-    padding: 0 15px;
-}
-
-/* Espaciado adicional entre Login y Registrarse */
-.navbar-collapse .nav-link:last-child {
-    margin-left: 10px;
-}
-
-/* ============================= */
-/* MENÚ DESPLEGABLE               */
-/* ============================= */
-
-/* Estilos del menú de inicio */
-.dropdown .dropdown-menu {
-    background-color: #000000;
-}
-
-.dropdown .dropdown-item {
-    color: white;
-}
-
-/* Efecto hover en elementos del menú */
-.dropdown .dropdown-item:hover {
-    background-color: #000000;
-}
-
-/* ============================= */
-/* VIDEO PROMOCIONAL              */
-/* ============================= */
-
-/* Contenedor del video */
 .video-carousel {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    background: linear-gradient(to right, #183661, #203a75);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 3rem;
+    position: relative;
+    width: 100%;
 }
 
-/* Estilos del video */
 .promo-video {
     width: 100%;
+    max-height: 400px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
 /* ============================= */
-/* BOTONES DEL CARRUSEL           */
+/* BOTONES DEL CARRUSEL         */
 /* ============================= */
-
-.prev-btn,
-.next-btn {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.prev-btn:hover,
-.next-btn:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-
-/* ============================= */
-/* ESTILOS PARA LOGIN Y REGISTRO  */
-/* ============================= */
-
-/* Contenedor del formulario */
-.formulario {
-    background-color: #b169f5;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Logo centrado */
-.logo {
-    width: 100px;
-    height: auto;
-    display: block;
-    margin-bottom: 10px;
-}
-
-/* Títulos del formulario */
-h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
+.prev-btn, .next-btn {
+    background-color: #00bfff;
     color: #ffffff;
-}
-
-/* Etiquetas de los campos */
-.form-label {
-    font-weight: bold;
-}
-
-/* ============================= */
-/* CAMPOS DE ENTRADA              */
-/* ============================= */
-
-.input-group-text {
-    background-color: #ffffff;
     border: none;
+    font-size: 1.8rem;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
 }
 
-.form-control {
-    background-color: #e0dede;
-    color: white;
-    border: 1px solid #ffffff;
+.prev-btn:hover, .next-btn:hover {
+    background-color: #009acd;
+}
+
+/* Posicionamiento */
+.prev-btn {
+    left: 20px;
+    top: 50%;
+}
+
+.next-btn {
+    right: 20px;
+    top: 50%;
 }
 
 /* ============================= */
-/* BOTONES Y ENLACES              */
+/* SECCIÓN DE TARJETAS PLATAFORMA */
 /* ============================= */
-
-/* Botón de enviar (Iniciar sesión) */
-.btn-primary {
-    background-color: #000000;
+.platform-card {
+    transition: transform 0.3s;
+    border-radius: 15px;
+    overflow: hidden;
     border: none;
+    box-shadow: 0 4px 8px rgba(15, 182, 0, 0.445);
+}
+
+.platform-card:hover {
+    transform: translateY(-10px);
+}
+
+.platform-header {
+    background: linear-gradient(135deg, #048815 0%, #5250bb05 100%);
+    color: white;
+    padding: 1.5rem;
+}
+
+.nintendo-bg {
+    background: linear-gradient(135deg, #e60012 0%, #ff0000 100%) !important;
+}
+
+.pc-bg {
+    background: linear-gradient(135deg, #00a1f1 0%, #0066b1 100%) !important;
+}
+
+.preorders-section {
+    background-color: #031c61;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.btn-purple {
+    background-color: #484aaa;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+
+.btn-purple:hover {
+    background-color: #5750bb;
     color: white;
 }
 
-.btn-primary:hover {
-    background-color: #074aad;
-}
 
-/* Enlace para recuperar contraseña */
-.text-primary {
-    color: white !important;
-}
 
-.text-primary:hover {
-    text-decoration: underline;
-}
-
-/* Botón de volver */
-.volver-link {
-    display: block;
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
-    color: black;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.volver-link:hover {
-    background-color: #dddddd;
-}
-
-/* ============================= */
-/* FOOTER                        */
-/* ============================= */
-
+/* === FOOTER === */
 .epic-footer {
-    background-color: #141414;
-    padding: 30px 20px;
-    font-size: 14px;
-    color: #ccc;
-    border-top: 1px solid #333;
+    background-color: #0f1923;
+    padding: 2rem 0;
+    margin-top: 2rem;
 }
 
-.epic-footer .footer-text {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.epic-footer p {
+.footer-text {
+    color: #bbb;
+    font-size: 0.9rem;
     line-height: 1.6;
-    margin-bottom: 20px;
 }
 
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .footer-links a {
-    color: #bbb;
+    color: #87ceeb;
     text-decoration: none;
-    font-weight: 500;
 }
 
 .footer-links a:hover {
@@ -262,19 +173,12 @@ h1 {
 }
 
 .volver-arriba {
-    text-align: right;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .volver-btn {
-    background-color: #2a2a2a;
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 8px;
-    text-decoration: none;
+    color: #ffffff;
     font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.volver-btn:hover {
-    background-color: #3a3a3a;
+    text-decoration: none;
 }

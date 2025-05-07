@@ -16,7 +16,7 @@
             const password = document.getElementById("idPassword").value.trim();
 
             if (username === "" || password === "") {
-                alert("Por favor, completa ambos campos.");
+                mostrarAlerta("Por favor, completa ambos campos.");
                 return;
             }
 
@@ -35,10 +35,20 @@
 
                 window.location.href = "index.html";
             } else {
-                alert("Usuario o contraseña incorrectos.");
+                mostrarAlerta("Usuario o contraseña incorrectos.");
             }
         }, false);
     });
+
+    // Mostrar el módulo de alerta
+    function mostrarAlerta(mensaje) {
+        const alertModule = document.getElementById("alertModule");
+        const alertMessage = document.getElementById("alertMessage");
+
+        alertMessage.textContent = mensaje;
+        alertModule.classList.remove("d-none"); // Mostrar el módulo de alerta
+    }
+
 })();
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -67,7 +77,7 @@ function agregarMenuProductosSiEsAdmin() {
     const productosItem = document.createElement('li');
     const productosLink = document.createElement('a');
     productosLink.className = 'dropdown-item';
-    productosLink.href = '/src/pages/productos.html';
+    productosLink.href = 'src/pages/productos.html';
     productosLink.textContent = 'Productos';
 
     productosItem.appendChild(productosLink);

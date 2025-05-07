@@ -12,10 +12,10 @@
 /* ============================= */
 body {
     font-family: Arial, sans-serif;
-    color: #f8f5ff;
+    color: #f0f4f8;
     min-height: 100vh;
     line-height: 1.6;
-    background: #672fac;
+    background: linear-gradient(to bottom, #1b263b, #0f172a);
 }
 
 .services-page {
@@ -28,7 +28,7 @@ body {
 /* NAVBAR                        */
 /* ============================= */
 .navbar {
-    background: linear-gradient(to right, #000000, #111) !important;
+    background: linear-gradient(to right, #0d1b2a, #1b263b) !important;
     padding: 10px 0 !important;
 }
 
@@ -41,6 +41,7 @@ body {
 
 .navbar .nav-link:hover {
     text-decoration: underline !important;
+    color: #5dade2 !important;
 }
 
 .navbar-collapse {
@@ -70,6 +71,7 @@ body {
 .services-header h1 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     margin-bottom: 1rem;
+    color: #5dade2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -78,6 +80,7 @@ body {
     opacity: 0.9;
     max-width: 800px;
     margin: 0 auto;
+    color: #d6e3f3;
 }
 
 /* Grid de servicios */
@@ -90,13 +93,13 @@ body {
 
 /* Tarjetas de servicio */
 .service-card {
-    background-color: #2a1055;
+    background-color: #274c77;
     border-radius: 15px;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease;
-    border: 1px solid #4a1d96;
+    border: 1px solid #5dade2;
 }
 
 .service-card:hover {
@@ -106,7 +109,7 @@ body {
 .service-icon {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
-    color: #b5179e;
+    color: #5dade2;
 }
 
 .service-card h3 {
@@ -114,7 +117,7 @@ body {
     margin-bottom: 1rem;
     position: relative;
     padding-bottom: 0.5rem;
-    color: #ffeb3b;
+    color: #a8dadc;
 }
 
 .service-card h3::after {
@@ -125,7 +128,7 @@ body {
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background: #b5179e;
+    background: #5dade2;
 }
 
 .service-card ul {
@@ -141,6 +144,7 @@ body {
     padding-left: 1.5rem;
     font-size: 0.95rem;
     line-height: 1.5;
+    color: #e0e0e0;
 }
 
 .service-card li::before {
@@ -148,27 +152,28 @@ body {
     position: absolute;
     left: 0;
     font-size: 1.2rem;
-    color: #b5179e;
+    color: #5dade2;
 }
 
 .service-card span {
     font-weight: bold;
-    color: #ffeb3b;
+    color: #ffd700;
 }
 
 /* ============================= */
 /* FOOTER                        */
 /* ============================= */
 .epic-footer {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(13, 27, 42, 0.9);
     padding: 2rem 1rem;
     text-align: center;
-    border-top: 1px solid #7617b5;
+    border-top: 1px solid #5dade2;
 }
 
 .footer-text {
     max-width: 1200px;
     margin: 0 auto;
+    color: #cfd8dc;
 }
 
 .footer-links {
@@ -180,13 +185,13 @@ body {
 }
 
 .footer-links a {
-    color: white;
+    color: #b0c4de;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #d8a1ff;
+    color: #5dade2;
 }
 
 .volver-arriba {
@@ -194,14 +199,14 @@ body {
 }
 
 .volver-btn {
-    color: white;
+    color: #5dade2;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .volver-btn:hover {
-    color: #d8a1ff;
+    color: #d6e3f3;
 }
 
 /* ============================= */
