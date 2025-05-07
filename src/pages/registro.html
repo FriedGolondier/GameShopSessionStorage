@@ -6,50 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/src/css/style.css">
-    <script src="/src/js/registro.js" defer></script>
+    <link rel="stylesheet" href="../css/registroStyle.css">
 </head>
 
-<body class="d-flex justify-content-center align-items-center vh-100"
-    style="background-image: url('../assets/image/fondo.jpg'); background-size: cover; background-position: center;">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4">
-                <form id="registerForm" class="formulario p-4">
-                    <img class="logo mx-auto d-block" src="../assets/image/GAME ON LOGO PNG.png" alt="Logo">
-                    <h1 class="text-center">REGISTRO</h1>
+<body class="auth-page">
+    <div class="auth-container">
+        <!-- Sección izquierda (imagen/logo) -->
+        <div class="auth-left">
+            <img class="auth-logo" src="../assets/image/GAME ON LOGO PNG.png" alt="Logo Game On">
+            <h2 class="text-center" style="color: #87ceeb; font-weight: 300;">Únete a nuestra comunidad</h2>
+            <p class="text-center" style="color: #bbb; font-size: 0.9rem;">Crea una cuenta para disfrutar de todos los
+                beneficios</p>
+        </div>
 
-                    <div class="mb-3">
-                        <label for="username" class="form-label">Usuario</label>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                                <img src="../assets/icon/user.png" alt="userIcon" width="20">
-                            </span>
-                            <input type="text" class="form-control" id="username" name="username" required>
-                        </div>
-                    </div>
+        <!-- Sección derecha (formulario) -->
+        <div class="auth-right">
+            <h1 class="auth-title">CREAR CUENTA</h1>
 
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <div class="input-group">
-                            <span class="input-group-text">
-                                <img src="../assets/icon/password.png" alt="passwordIcon" width="20">
-                            </span>
-                            <input type="password" class="form-control" id="password" name="password" required>
-                        </div>
+            <form id="registerForm" class="auth-form">
+                <div class="auth-form-group">
+                    <label for="username" class="auth-label">Usuario</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <img src="../assets/icon/user.png" alt="Icono usuario" class="auth-icon">
+                        </span>
+                        <input type="text" class="form-control with-icon" id="username" name="username" required>
                     </div>
+                </div>
 
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary w-100">Registrarse</button>
-                        <p class="mt-3">¿Ya tienes cuenta? <a href="login.html" class="text-primary">Inicia sesión</a>
-                        </p>
-                        <a href="/index.html" class="d-block mt-3">Volver</a>
+                <div class="auth-form-group">
+                    <label for="password" class="auth-label">Contraseña</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <img src="../assets/icon/password.png" alt="Icono contraseña" class="auth-icon">
+                        </span>
+                        <input type="password" class="form-control with-icon" id="password" name="password" required>
                     </div>
-                </form>
+                </div>
+
+                <div class="auth-form-group">
+                    <label for="confirmPassword" class="auth-label">Confirmar Contraseña</label>
+                    <div class="input-group">
+                        <span class="input-group-text">
+                            <img src="../assets/icon/password.png" alt="Icono contraseña" class="auth-icon">
+                        </span>
+                        <input type="password" class="form-control with-icon" id="confirmPassword"
+                            name="confirmPassword" required>
+                    </div>
+                </div>
+
+                <div class="auth-terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Acepto los <a href="#" class="auth-link" data-bs-toggle="modal"
+                            data-bs-target="#termsModal">términos y condiciones</a></label>
+                </div>
+
+                <button type="submit" class="auth-btn">Registrarse</button>
+
+                <div class="auth-message">
+                    ¿Ya tienes cuenta? <a href="/PAGINA-WEB COMPLETA-G-SHOP/login.html" class="auth-link">Inicia sesión
+                        aquí</a>
+                </div>
+            </form>
+
+            <div class="auth-footer">
+                <a href="/PAGINA-WEB COMPLETA-G-SHOP/index.html" class="auth-link">← Volver al inicio</a>
             </div>
         </div>
     </div>
+
+    <!-- Modal términos y condiciones -->
+    <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title" id="termsModalLabel">Términos y Condiciones</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>1. Aceptación de los Términos</h6>
+                    <p>Al registrarte en nuestro sitio, aceptas cumplir con estos términos y condiciones.</p>
+
+                    <h6>2. Uso de la Cuenta</h6>
+                    <p>Eres responsable de mantener la confidencialidad de tu cuenta y contraseña.</p>
+
+                    <h6>3. Privacidad</h6>
+                    <p>Tus datos personales serán tratados de acuerdo con nuestra Política de Privacidad.</p>
+
+                    <h6>4. Conducta del Usuario</h6>
+                    <p>Te comprometes a no usar el sitio para actividades ilegales o prohibidas.</p>
+
+                    <h6>5. Modificaciones</h6>
+                    <p>Nos reservamos el derecho de modificar estos términos en cualquier momento.</p>
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/registro.js"></script>
 </body>
 
 </html>

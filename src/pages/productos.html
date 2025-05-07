@@ -7,13 +7,13 @@
     <title>Productos - GAME ON SHOP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/src/css/productosStyle.css">
+    <link rel="stylesheet" href="../css/productosStyle.css">
 </head>
 
 <body>
     <nav>
         <div class="container">
-            <a href="/index.html">Inicio</a>
+            <a href="/PAGINA WEB/PAGINA-WEB COMPLETA-G-SHOP/index.html">Inicio</a>
         </div>
     </nav>
 
@@ -71,7 +71,23 @@
                     <label for="Emision">Fecha de emision</label>
                     <input type="date" id="Emision" name="Emision" required>
                 </div>
-
+                <div class="form-group d-flex gap-3 align-items-center">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" name="extraSwitch" id="switchDLC"
+                            value="Tiene DLC">
+                        <label class="form-check-label" for="switchDLC">Tiene DLC</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" name="extraSwitch" id="switchColeccionable"
+                            value="Edición Coleccionable">
+                        <label class="form-check-label" for="switchColeccionable">Coleccionable</label>
+                    </div>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" name="extraSwitch" id="switchGOTY"
+                            value="GOTY edition">
+                        <label class="form-check-label" for="switchGOTY">GOTY edition</label>
+                    </div>
+                </div>
                 <div class="form-group full-width submit-container">
                     <button type="submit">Añadir</button>
                 </div>
@@ -80,6 +96,15 @@
 
         <section class="table-section">
             <h2>Lista de Productos</h2>
+
+            <!-- Barra de búsqueda -->
+            <div class="my-3 text-center">
+                <input type="text" id="txtBuscar" placeholder="Buscar por ID o Nombre"
+                    class="form-control w-50 d-inline-block">
+                <button id="btnBuscar" class="btn btn-primary ms-2">Buscar</button>
+                <button id="btnMostrarTodos" class="btn btn-secondary ms-2">Mostrar Todos</button>
+            </div>
+
             <div id="divListaProductos" class="table-responsive">
                 <table>
                     <thead>
@@ -91,14 +116,20 @@
                             <th>Precio</th>
                             <th>Categoría</th>
                             <th>Tipo Venta</th>
-                            <th>Acciones</th>
                             <th>Fecha de Emisión</th>
+                            <th>Extra</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody id="tbodyProductos">
                         <!-- Productos se agregarán aquí dinámicamente -->
                     </tbody>
                 </table>
+            </div>
+
+            <!-- Botón eliminar base de datos -->
+            <div class="text-center my-3">
+                <button id="btnEliminarBD" class="btn btn-danger">Eliminar Base de Datos</button>
             </div>
         </section>
     </main>
@@ -107,8 +138,7 @@
         <!-- Footer content -->
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="../js/listarProductos.js"></script>
 </body>
 
 </html>

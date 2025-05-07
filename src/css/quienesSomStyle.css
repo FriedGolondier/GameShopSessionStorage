@@ -13,24 +13,26 @@
 body {
     font-family: Arial, sans-serif;
     color: white;
+    background-color: #1a1a1a;
 }
 
 /* ============================= */
 /* NAVBAR                        */
 /* ============================= */
 .navbar {
-    background: linear-gradient(to right, #000000, #111) !important;
+    background: linear-gradient(to right, #0d1b2a, #1b263b) !important;
     padding: 10px 0 !important;
 }
 
 .navbar .nav-link {
-    color: white !important;
+    color: #ffffff !important;
     font-weight: bold !important;
     text-decoration: none !important;
 }
 
 .navbar .nav-link:hover {
     text-decoration: underline !important;
+    color: #5dade2 !important;
 }
 
 .navbar-collapse {
@@ -52,8 +54,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #672fac;
-    ;
+    background: linear-gradient(to bottom, #1b263b, #0f172a);
 }
 
 /* Contenedor principal */
@@ -73,6 +74,7 @@ body {
 .about-header h1 {
     font-size: clamp(1.8rem, 5vw, 2.5rem);
     margin-bottom: 1rem;
+    color: #5dade2;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -95,11 +97,11 @@ body {
 
 /* Tarjetas */
 .about-card {
-    background-color: #698ef5;
+    background-color: #274c77;
     border-radius: 15px;
     padding: 2rem;
     text-align: center;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
     transition: transform 0.3s ease;
     width: 100%;
 }
@@ -111,7 +113,7 @@ body {
 .card-icon {
     font-size: clamp(2.5rem, 8vw, 3rem);
     margin-bottom: 1.5rem;
-    color: white;
+    color: #5dade2;
 }
 
 .about-card h3 {
@@ -119,6 +121,7 @@ body {
     margin-bottom: 1rem;
     position: relative;
     padding-bottom: 0.5rem;
+    color: #a8dadc;
 }
 
 .about-card h3::after {
@@ -129,12 +132,13 @@ body {
     transform: translateX(-50%);
     width: 50px;
     height: 3px;
-    background: white;
+    background: #5dade2;
 }
 
 .about-card p {
     font-size: clamp(0.9rem, 2.5vw, 1rem);
     line-height: 1.6;
+    color: #e0e0e0;
 }
 
 .about-card ul {
@@ -148,6 +152,7 @@ body {
     position: relative;
     padding-left: 1.5rem;
     font-size: clamp(0.9rem, 2.5vw, 1rem);
+    color: #e0e0e0;
 }
 
 .about-card li::before {
@@ -155,18 +160,19 @@ body {
     position: absolute;
     left: 0;
     font-size: 1.2rem;
+    color: #5dade2;
 }
 
 .about-card span {
     font-weight: bold;
-    color: #ffeb3b;
+    color: #ffd700;
 }
 
 /* ============================= */
 /* FOOTER                        */
 /* ============================= */
 .epic-footer {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(13, 27, 42, 0.9);
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -174,6 +180,7 @@ body {
 .footer-text {
     max-width: 1200px;
     margin: 0 auto;
+    color: #cfd8dc;
 }
 
 .footer-links {
@@ -185,8 +192,12 @@ body {
 }
 
 .footer-links a {
-    color: white;
+    color: #b0c4de;
     text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #5dade2;
 }
 
 .volver-arriba {
@@ -194,7 +205,7 @@ body {
 }
 
 .volver-btn {
-    color: white;
+    color: #5dade2;
     text-decoration: none;
     font-weight: bold;
 }
